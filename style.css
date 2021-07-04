@@ -1,0 +1,51 @@
+@font-face {
+  font-family: Nunito;
+  src: url(assets/fonts/Nunito-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Nunito;
+  src: url(assets/fonts/Nunito-Bold.ttf);
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Nunito;
+}
+:root {
+  --text-primary-color: #3e3f43;
+}
+a {
+  text-decoration: none;
+}
+.inline-block,
+.navbar__item {
+  display: inline-block;
+}
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right;
+}
+.wrapper {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+/* //=====style=====// */
+.logo__name {
+  color: var(--text-primary-color);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 5px 8px;
+}
+.nav__area {
+  padding: 20px 28px 20px 81px;
+}
