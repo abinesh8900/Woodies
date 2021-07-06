@@ -18,6 +18,11 @@
   src: url(assets/fonts/Nunito-SemiBold.ttf);
   font-weight: 600;
 }
+@font-face {
+  font-family: Nunito;
+  src: url(assets/fonts/Nunito-Light.ttf);
+  font-weight: 400;
+}
 
 * {
   box-sizing: border-box;
@@ -78,6 +83,9 @@ a {
 .semi-bold-text {
   font-weight: 600;
 }
+.col {
+  display: inline-block;
+}
 /* //=====style=====// */
 .logo-picture {
   width: auto;
@@ -100,6 +108,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  z-index: 5;
 }
 .navbar {
   font-size: 16px;
@@ -107,12 +116,14 @@ a {
 }
 .navbar__item {
   color: #222222;
-  margin-right: 48px;
+  width: 105px;
+  text-align: center;
 }
 .navbar__item:hover {
   color: var(--gold-color);
-  /* font-weight: 800; */
+  font-weight: bold;
 }
+
 .navbar__item-btn {
   color: var(--text-primary-color);
   border: 1px solid var(--text-primary-color);
@@ -229,7 +240,7 @@ a {
 }
 /* ********************* */
 .divider-width2 {
-  width: 6%;
+  width: 5%;
 }
 .card__holder {
   font-size: 0;
@@ -254,6 +265,7 @@ a {
 }
 .card__picture-name {
   font-size: 24px;
+  font-weight: bold;
   line-height: 33px;
   margin-top: 24px;
 }
@@ -269,7 +281,7 @@ a {
 }
 .card2__holder {
   display: inline-block;
-  width: calc(952px / 3);
+  width: calc(950px / 3);
   font-size: 20px;
 }
 .card2 {
@@ -328,6 +340,170 @@ a {
   right: 16px;
 }
 .card2:hover {
-  cursor: pointer;
   transform: scale(1.03);
+}
+/* ******************* */
+.divider-width4 {
+  width: 23%;
+}
+.slide__holder {
+  font-size: 0;
+}
+.slide__card {
+  margin-right: 40px;
+}
+.slide__card-picture {
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+}
+.slider__holder {
+  width: 380px;
+}
+.slider {
+  border: 1px solid var(--light-blue);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 54px 16px 58px 16px;
+}
+.slider__desc {
+  margin: 16px 0;
+  font-size: 14px;
+  line-height: 19px;
+}
+.slider__picture > img {
+  border-radius: 50px;
+}
+.slider__picture-caption {
+  line-height: 16px;
+}
+.slider__picture-caption-holder {
+  font-size: 12px;
+  color: #afafaf;
+  margin: 8px 0 0 10px;
+}
+.slider__btn-holder {
+  margin-top: 21px;
+  font-size: 14px;
+  color: var(--text-primary-color);
+}
+.slider__btn {
+  line-height: 19px;
+  border: 0;
+  background-color: transparent;
+}
+
+.slider__btn:hover {
+  color: #c4c4c4;
+  cursor: pointer;
+}
+.slider__right-icon {
+  margin-left: 8px;
+}
+.slider__left-icon {
+  margin-right: 8px;
+}
+.slider__index-holder {
+  text-align: right;
+  margin-top: 23px;
+}
+.slider__index {
+  display: inline-block;
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+  background-color: #e5e5e5;
+}
+.slider__index--active {
+  background-color: var(--gold-color);
+}
+.footer__section {
+  background-image: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(assets/img/footer-bg.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  /* height: 455px; */
+  background-color: #f2f2f2;
+}
+.input__section {
+  font-size: 0;
+  padding: 52px 0;
+}
+.input__area,
+.input__desc-holder {
+  width: calc(950px / 2);
+  font-size: 0;
+}
+
+.input__desc {
+  font-size: 18px;
+  line-height: 25px;
+}
+.input__holder {
+  padding: 11px 0 11px 16px;
+  background-color: var(--white);
+  width: 100%;
+}
+.input__holder {
+  border: 1px solid var(--gold-color);
+  border-right: transparent;
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.input__field {
+  border: 0;
+  outline: none;
+  width: 70%;
+}
+.input__btn {
+  border: 0;
+  padding: 9px 24px 10px 24px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 22px;
+  background-color: var(--gold-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 4px;
+}
+.footer__nav-container {
+  width: 708px;
+  padding-top: 24px;
+  border-top: 1px solid #c4c4c4;
+  margin: 34px 0 45px 0;
+}
+.footer__nav-holder {
+  width: fit-content;
+  margin-right: 38px;
+}
+.foot__nav-item-heading,
+.foot__nav-item {
+  display: block;
+}
+.foot__nav-item-heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #333333;
+}
+.foot__nav-item,
+.copyrights {
+  color: #8d8d8d;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.foot__nav-item {
+  margin-top: 16px;
+}
+.copyrights {
+  padding-bottom: 22px;
+  margin: 0 auto;
+  width: fit-content;
 }
