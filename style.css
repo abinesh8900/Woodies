@@ -455,9 +455,6 @@ a {
   line-height: 25px;
 }
 .input__holder {
-  padding: 11px 0 11px 16px;
-  background-color: var(--white);
-  width: 100%;
 }
 .input__holder {
   border: 1px solid var(--gold-color);
@@ -465,6 +462,10 @@ a {
   position: relative;
   border-radius: 4px;
   margin-bottom: 10px;
+  padding: 11px 0 11px 16px;
+  background-color: var(--white);
+  width: 100%;
+  text-align: left;
 }
 .input__field {
   border: 0;
@@ -768,13 +769,8 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
-  .input__section {
-    background-color: yellowgreen;
-  }
-
   .input__section,
   .input__area,
-  .input__holder,
   .input__desc-holder {
     width: 100%;
   }
