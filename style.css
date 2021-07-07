@@ -737,7 +737,7 @@ a {
 }
 @media screen and (max-width: 650px) and (min-width: 550px) {
   body {
-    background-color: violet;
+    /* background-color: violet; */
   }
   .section__col-bg {
     background-size: unset;
