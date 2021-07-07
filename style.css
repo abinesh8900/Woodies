@@ -27,9 +27,7 @@
 * {
   box-sizing: border-box;
 }
-body {
-  font-family: Nunito;
-}
+
 :root {
   --text-primary-color: #3e3f43;
   --gold-color: #daa520;
@@ -43,7 +41,8 @@ a {
   text-decoration: none;
 }
 .inline-block,
-.navbar__item {
+.navbar__item,
+.footer__nav-holder {
   display: inline-block;
 }
 .float-l {
@@ -82,9 +81,6 @@ a {
 }
 .semi-bold-text {
   font-weight: 600;
-}
-.col {
-  display: inline-block;
 }
 .menu__btn {
   display: none;
@@ -620,7 +616,7 @@ a {
 }
 @media screen and (max-width: 829px) {
   .section-header {
-    background-color: rgb(211, 192, 211);
+    /* background-color: rgb(211, 192, 211); */
   }
   .header__large-heading {
     display: block;
@@ -632,7 +628,7 @@ a {
 @media screen and (max-width: 946px) {
   .nav__area-tab {
     background-color: var(--pink-color);
-    height: 55vh;
+    height: 450px;
     border-bottom-left-radius: 150px;
   }
   .menu__btn {
@@ -646,22 +642,19 @@ a {
     display: none;
   }
   .navbar {
-    display: block;
     width: 100%;
     padding: 0 0 30px 40px;
   }
   .navbar__item {
     display: block;
     text-align: unset;
-    margin-top: 30px;
   }
   .navbar__item:hover {
     color: var(--white);
   }
+  .navbar__item,
   .navbar__item-btn {
-    position: absolute;
-    top: 20px;
-    right: 70px;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -737,7 +730,21 @@ a {
   .card__items {
     width: 210px;
   }
-  .card2__holder {
+  /* .card2__holder {
+    display: block;
     width: unset;
+  } */
+}
+@media screen and (max-width: 650px) and (min-width: 550px) {
+  body {
+    background-color: violet;
+  }
+  .section__col-bg {
+    background-size: unset;
+    background-position-x: 50px;
+  }
+  .hero__bg {
+    background-size: 300px;
+    background-position: 150px 245px;
   }
 }
