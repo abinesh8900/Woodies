@@ -744,7 +744,7 @@ a {
     background-position-x: 50px;
   }
   .hero__bg {
-    background-size: 300px;
-    background-position: 150px 245px;
+    background-size: 400px;
+    background-position: right;
   }
 }
