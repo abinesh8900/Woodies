@@ -12,16 +12,16 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-
     <title>Woodies</title>
   </head>
   <body>
-    <header class="nav__area wrapper clearfix">
+    <header class="top__header">
+      <div class="wrapper horizontal-align clearfix nav__area">
       <a class="nav__logo inline-block clearfix" href="javascript:void(0)">
         <figure class="logo-picture inline-block float-l">
-          <img src="assets/img/Vector.png" alt="logo" />
+          <img class="logo" src="assets/img/Vector.png" alt="logo" />
         </figure>
-        <p class="logo__name inline-block">WOODIES</p>
+        <p class="logo__name bold-text inline-block">WOODIES</p>
       </a>
       <button
         class="menu__btn block-element fas fa-bars float-r"
@@ -29,7 +29,7 @@
         type="button"
       ></button>
       <nav class="navbar float-r hidden" id="menu__items">
-        <ul class="inline-block block-element">
+        <ul>
           <li class="navbar__item-holder inline-block block-element">
             <a class="navbar__item" href="javascript:void(0)">Home</a>
           </li>
@@ -54,10 +54,11 @@
           </li>
         </ul>
       </nav>
+      </div>
     </header>
     <section class="mb-120">
       <div class="hero__bg-style"></div>
-      <div class="wrapper hero__bg">
+      <div class="wrapper horizontal-align hero__bg bg-no-repeat">
         <div class="hero__content">
           <p class="small-heading">
             Are you looking for
@@ -74,9 +75,9 @@
       </div>
     </section>
     <section class="mb-120">
-      <header class="container section-header">
+      <header class="container horizontal-align section-header">
         <figure class="header__picture inline-block">
-          <img src="assets/img/Vector.png" alt="logo" />
+          <img class="logo" src="assets/img/Vector.png" alt="logo" />
         </figure>
         <p class="header__small-heading small-heading bold-text inline-block">
           Who we are
@@ -84,9 +85,13 @@
         <span class="divider divider-width inline-block"></span>
         <p class="header__large-heading large-heading inline-block">ABOUT US</p>
       </header>
-      <div class="container section-content clearfix">
+      <div class="container horizontal-align section-content clearfix">
         <div
-          class="section__col section__col--left section__col-bg inline-block"
+          class="
+            section__col section__col--left section__col-bg
+            bg-no-repeat
+            inline-block
+          "
         >
           <div class="section__bg-style"></div>
         </div>
@@ -100,8 +105,8 @@
           </p>
         </div>
       </div>
-      <div class="section__bg">
-        <div class="container">
+      <div class="section__bg bg-no-repeat">
+        <div class="container horizontal-align">
           <div class="section__content">
             <p class="small-heading">
               Customized furniture
@@ -116,10 +121,10 @@
       </div>
     </section>
 
-    <section class="container mb-120">
+    <section class="container horizontal-align mb-120">
       <header class="section-header">
         <figure class="header__picture inline-block">
-          <img src="assets/img/Vector.png" alt="logo" />
+          <img class="logo" src="assets/img/Vector.png" alt="logo" />
         </figure>
         <p class="header__small-heading small-heading bold-text inline-block">
           How to custom
@@ -132,44 +137,70 @@
       <div class="card__holder semi-bold-text">
         <div class="card__items">
           <figure class="card__picture">
-            <span class="card__num">1</span>
-            <img src="assets/img/shop 1.svg" alt="shop" />
+            <span class="card__num vertical-align">1</span>
+            <img
+              src="assets/img/shop 1.svg"
+              alt="shop"
+              width="120"
+              height="120"
+            />
           </figure>
-          <figcaption class="card__picture-name">Choose Design</figcaption>
+          <figcaption class="card__picture-name bold-text">
+            Choose Design
+          </figcaption>
         </div>
         <div class="card__items">
           <figure class="card__picture">
-            <span class="card__num">2</span>
-            <img src="assets/img/ruler 1.svg" alt="ruler" />
+            <span class="card__num vertical-align">2</span>
+            <img
+              src="assets/img/ruler 1.svg"
+              alt="ruler"
+              width="120"
+              height="120"
+            />
           </figure>
-          <figcaption class="card__picture-name">Area measuring</figcaption>
+          <figcaption class="card__picture-name bold-text">
+            Area measuring
+          </figcaption>
         </div>
         <div class="card__items">
           <figure class="card__picture">
-            <sapn class="card__num">3</sapn>
-            <img src="assets/img/cost 1.svg" alt="cost" />
+            <sapn class="card__num vertical-align">3</sapn>
+            <img
+              src="assets/img/cost 1.svg"
+              alt="cost"
+              width="120"
+              height="120"
+            />
           </figure>
-          <figcaption class="card__picture-name">Budgeting</figcaption>
+          <figcaption class="card__picture-name bold-text">
+            Budgeting
+          </figcaption>
         </div>
         <div class="card__items">
           <figure class="card__picture">
-            <span class="card__num">4</span>
-            <img src="assets/img/carpenter 1.svg" alt="carpenter" />
+            <span class="card__num vertical-align">4</span>
+            <img
+              src="assets/img/carpenter 1.svg"
+              alt="carpenter"
+              width="120"
+              height="120"
+            />
           </figure>
-          <figcaption class="card__picture-name">Production</figcaption>
+          <figcaption class="card__picture-name bold-text">
+            Production
+          </figcaption>
         </div>
-        <a
-          class="card__navigation primary-btn inline-block"
-          href="javascript:void(0)"
+        <a class="card__navigation primary-btn" href="javascript:void(0)"
           >Explore Furniture</a
         >
       </div>
     </section>
 
-    <section class="container mb-120">
+    <section class="container horizontal-align mb-120">
       <header class="section-header">
         <figure class="header__picture inline-block">
-          <img src="assets/img/Vector.png" alt="logo" />
+          <img class="logo" src="assets/img/Vector.png" alt="logo" />
         </figure>
         <p class="header__small-heading small-heading bold-text inline-block">
           What we have
@@ -180,57 +211,70 @@
         </p>
       </header>
       <div class="card2__section">
-        <div class="card2__holder">
-          <div class="card2 card2__item1 card__pink">
-            <figcaption class="card2__text">Desk</figcaption>
-            <figure class="card2__picture--left">
-              <img src="assets/img/card1.png" alt="" />
-            </figure>
-            <a class="card2__btn" href="javascript:void(0)">Shop Now</a>
+        <div class="card2__holder inline-block">
+          <div class="zoom__card2 inline-block">
+          <div class="card2 horizontal-align card2__item1 card__pink"></div>
+          <figcaption class="card2__text">Desk</figcaption>
+          <figure class="card2__picture--first vertical-align">
+            <img src="assets/img/card1.png" alt="" />
+          </figure>
+          <a class="card2__btn semi-bold-text" href="javascript:void(0)"
+            >Shop Now</a
+          ></div>
+        </div>
+        <div class="card2__holder inline-block">
+          <div class="zoom__card2 inline-block">
+          <div class="card2 horizontal-align card__gold"></div>
+          <figcaption class="card2__text">Chair</figcaption>
+          <figure class="card2__picture vertical-align">
+            <img src="assets/img/card2.png" alt="" />
+          </figure>
+          <a class="card2__btn semi-bold-text" href="javascript:void(0)">
+            Shop Now
+          </a>
           </div>
         </div>
-        <div class="card2__holder">
-          <div class="card2 card2__item2 card__gold">
-            <figcaption class="card2__text">Chair</figcaption>
-            <figure class="card2__picture">
-              <img src="assets/img/card2.png" alt="" />
-            </figure>
-            <a class="card2__btn" href="javascript:void(0)">Shop Now</a>
+        <div class="card2__holder inline-block">
+          <div class="zoom__card2 inline-block">
+          <div class="card2 horizontal-align card__blue"></div>
+          <figcaption class="card2__text">Kitchenware</figcaption>
+          <figure class="card2__picture vertical-align">
+            <img src="assets/img/card3.png" alt="" />
+          </figure>
+          <a class="card2__btn semi-bold-text" href="javascript:void(0)"
+            >Shop Now</a
+          >
           </div>
         </div>
-        <div class="card2__holder">
-          <div class="card2 card2__item3 card__blue">
-            <figcaption class="card2__text">Kitchenware</figcaption>
-            <figure class="card2__picture">
-              <img src="assets/img/card3.png" alt="" />
-            </figure>
-            <a class="card2__btn" href="javascript:void(0)">Shop Now</a>
+        <div class="card2__holder card2__holder-row inline-block">
+          <div class="zoom__card2 inline-block">
+          <div class="card2 horizontal-align card__pink"></div>
+          <figcaption class="card2__text">Book Shelf</figcaption>
+          <figure class="card2__picture vertical-align">
+            <img src="assets/img/card4.png" alt="" />
+          </figure>
+          <a class="card2__btn semi-bold-text" href="javascript:void(0)"
+            >Shop Now</a
+          >
           </div>
         </div>
-        <div class="card2__holder">
-          <div class="card2 card2__item4 card__pink">
-            <figcaption class="card2__text">Book Shelf</figcaption>
-            <figure class="card2__picture">
-              <img src="assets/img/card4.png" alt="" />
-            </figure>
-            <a class="card2__btn" href="javascript:void(0)">Shop Now</a>
-          </div>
-        </div>
-        <div class="card2__holder">
-          <div class="card2 card2__item5 card__gold">
-            <figcaption class="card2__text">Electronics</figcaption>
-            <figure class="card2__picture">
-              <img src="assets/img/card5.png" alt="" />
-            </figure>
-            <a class="card2__btn" href="javascript:void(0)">Shop Now</a>
-          </div>
+        <div class="card2__holder card2__holder-row inline-block">
+          <div class="zoom__card2 inline-block">
+          <div class="card2 horizontal-align card__gold"></div>
+          <figcaption class="card2__text">Electronics</figcaption>
+          <figure class="card2__picture vertical-align">
+            <img src="assets/img/card5.png" alt="" />
+          </figure>
+          <a class="card2__btn semi-bold-text" href="javascript:void(0)"
+            >Shop Now</a
+          >
         </div>
       </div>
     </section>
-    <section class="container mb-120">
+    <section class="container horizontal-align mb-120">
       <header class="section-header">
         <figure class="header__picture inline-block">
-          <img src="assets/img/Vector.png" alt="logo" />
+          <img class="logo" src="assets/img/Vector.png" alt="logo" />
         </figure>
         <p class="header__small-heading small-heading bold-text inline-block">
           What they say
@@ -323,16 +367,16 @@
           </div>
         </div>
         <div class="slider__index-holder">
-          <span class="slider__index slider__index--active"></span>
-          <span class="slider__index"></span>
-          <span class="slider__index"></span>
-          <span class="slider__index"></span>
+          <span class="slider__index slider__index--active inline-block"></span>
+          <span class="slider__index inline-block"></span>
+          <span class="slider__index inline-block"></span>
+          <span class="slider__index inline-block"></span>
         </div>
       </div>
     </section>
-    <footer class="footer__section">
-      <div class="container">
-        <div class="input__section">
+    <footer class="footer__section bg-no-repeat">
+      <div class="container horizontal-align">
+        <div class="input__section horizontal-align">
           <div class="input__desc-holder inline-block">
             <p class="input__desc bold-text">Subscribe to our newsletter</p>
             <p class="input__desc">
@@ -355,15 +399,15 @@
         </div>
 
         <div class="footer__nav-container">
-          <div class="footer__nav-holder">
+          <div class="footer__nav-holder inline-block">
             <a
               class="nav__logo inline-block clearfix"
               href="javascript:void(0)"
             >
               <figure class="logo-picture inline-block float-l">
-                <img src="assets/img/Vector.png" alt="logo" />
+                <img class="logo" src="assets/img/Vector.png" alt="logo" />
               </figure>
-              <p class="logo__name inline-block">WOODIES</p>
+              <p class="logo__name bold-text inline-block">WOODIES</p>
             </a>
             <a class="foot__nav-item" href="javascript:void(0)"
               >(012) 8967453</a
@@ -375,7 +419,7 @@
               >Jakarta, Indonesia</a
             >
           </div>
-          <div class="footer__nav-holder">
+          <div class="footer__nav-holder inline-block">
             <a
               class="foot__nav-item-heading semi-bold-text"
               href="javascript:void(0)"
@@ -386,7 +430,7 @@
             <a class="foot__nav-item" href="javascript:void(0)">Services</a>
           </div>
 
-          <div class="footer__nav-holder">
+          <div class="footer__nav-holder inline-block">
             <a
               class="foot__nav-item-heading semi-bold-text"
               href="javascript:void(0)"
@@ -397,7 +441,7 @@
             <a class="foot__nav-item" href="javascript:void(0)">Contact Us</a>
           </div>
 
-          <div class="footer__nav-holder">
+          <div class="footer__nav-holder inline-block">
             <a
               class="foot__nav-item-heading semi-bold-text"
               href="javascript:void(0)"
@@ -408,7 +452,7 @@
             <a class="foot__nav-item" href="javascript:void(0)">Our Team</a>
           </div>
 
-          <div class="footer__nav-holder">
+          <div class="footer__nav-holder inline-block">
             <a
               class="foot__nav-item-heading semi-bold-text"
               href="javascript:void(0)"
@@ -419,7 +463,7 @@
             <a class="foot__nav-item" href="javascript:void(0)">Twitter</a>
           </div>
         </div>
-        <p class="copyrights">© 2020 WOODIES</p>
+        <p class="copyrights horizontal-align">© 2020 WOODIES</p>
       </div>
     </footer>
     <script src="script.js"></script>

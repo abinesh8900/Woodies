@@ -1,12 +1,16 @@
 const toggleMenu = document.querySelector("#toggle__menu");
 const menuItems = document.querySelector("#menu__items");
-const topHeader = document.querySelector(".nav__area");
+const topHeader = document.querySelector(".top__header");
+// const cards = document.querySelectorAll(".card2");
+// console.log(cards);
 
-const openMenu = function () {
+toggleMenu.addEventListener("click", function () {
   toggleMenu.classList.toggle("fa-bars");
   toggleMenu.classList.toggle("fa-times");
   menuItems.classList.toggle("hidden");
-  topHeader.classList.toggle("nav__area-tab");
-};
+  topHeader.classList.toggle("top__header-tab");
+});
 
-toggleMenu.addEventListener("click", openMenu);
+window.addEventListener("scroll", function () {
+  topHeader.classList.toggle("sticky-nav", window.scrollY > 0);
+});
