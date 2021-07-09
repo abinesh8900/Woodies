@@ -1,8 +1,6 @@
 const toggleMenu = document.querySelector("#toggle__menu");
 const menuItems = document.querySelector("#menu__items");
 const topHeader = document.querySelector(".top__header");
-// const cards = document.querySelectorAll(".card2");
-// console.log(cards);
 
 toggleMenu.addEventListener("click", function () {
   toggleMenu.classList.toggle("fa-bars");

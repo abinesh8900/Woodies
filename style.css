@@ -67,6 +67,15 @@ a {
 .vertical-align {
   transform: translate(-50%, -50%);
 }
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
 .wrapper {
   max-width: 1152px;
 }
@@ -198,10 +207,11 @@ a {
   margin-bottom: 64px;
 }
 .header__picture {
-  margin-right: 10px;
+  position: relative;
+  bottom: 12px;
 }
 .header__small-heading {
-  margin-right: 16px;
+  margin: 0 16px 0 10px;
 }
 .header__large-heading {
   color: var(--nero);
@@ -209,7 +219,7 @@ a {
 }
 .divider {
   border-top: 2px solid var(--text-primary-color);
-  margin-bottom: 5px;
+  margin-bottom: 21px;
 }
 .divider-width {
   width: 29%;
@@ -258,7 +268,6 @@ a {
 }
 .card__holder {
   font-size: var(--fs-0);
-  text-align: center;
 }
 .card__items {
   display: inline-block;
@@ -293,19 +302,16 @@ a {
 .card2__section {
   font-size: var(--fs-0);
 }
-.zoom__card2 {
-  position: relative;
-}
 .card2__holder {
   width: calc(950px / 3);
   font-size: var(--fs-20);
-  text-align: center;
 }
 .card2 {
   width: 280px;
   height: 400px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
+  position: relative;
 }
 .card2__holder-row {
   margin-top: 40px;
@@ -349,11 +355,14 @@ a {
   bottom: 24px;
   right: 16px;
 }
-.card2:hover {
-  transform: scale(1.04);
+.card__pink:hover {
+  box-shadow: 0 0 0 6px var(--pink-color);
 }
-.big {
-  transform: scale(1.03);
+.card__gold:hover {
+  box-shadow: 0 0 0 6px var(--light-gold);
+}
+.card__blue:hover {
+  box-shadow: 0 0 0 6px var(--light-blue);
 }
 /* ******************* */
 .divider-width4 {
@@ -416,7 +425,7 @@ a {
   margin-right: 8px;
 }
 .slider__index-holder {
-  text-align: right;
+  /* text-align: right; */
   margin-top: 23px;
 }
 .slider__index {
@@ -462,7 +471,6 @@ a {
   padding: 11px 0 11px 16px;
   background-color: var(--white);
   width: 100%;
-  text-align: left;
 }
 .input__field {
   border: 0;
@@ -480,6 +488,7 @@ a {
   top: 0;
   right: 0;
   border-radius: 4px;
+  cursor: pointer;
 }
 .footer__nav-container {
   width: 100%;
@@ -518,6 +527,12 @@ a {
   .mb-120 {
     margin-bottom: 100px;
   }
+  .md-align-center {
+    text-align: center;
+  }
+  .md-align-left {
+    text-align: left;
+  }
   .hero__content {
     width: 350px;
     left: 5%;
@@ -532,9 +547,7 @@ a {
   .header__small-heading {
     margin-right: 8px;
   }
-  .section-header {
-    text-align: center;
-  }
+
   .divider-width {
     width: 30%;
   }
@@ -575,9 +588,7 @@ a {
   .card__navigation {
     margin: 14px auto 64px auto;
   }
-  .card2__section {
-    text-align: center;
-  }
+
   .card2__holder-row {
     margin: unset;
   }
@@ -587,9 +598,7 @@ a {
   .divider-width4 {
     width: 21%;
   }
-  .slide__section {
-    text-align: center;
-  }
+
   .slide__card {
     margin: 0 20px 40px 20px;
   }
@@ -599,17 +608,10 @@ a {
   }
   .slider {
     display: block;
-    text-align: left;
   }
-  .slider__btn {
-    text-align: left;
-  }
-  .slider__index-holder {
-    text-align: center;
-  }
+
   .input__section {
     width: 475px;
-    text-align: center;
   }
   .input__area {
     margin-top: 35px;
