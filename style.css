@@ -618,6 +618,10 @@ a {
   }
 }
 @media screen and (max-width: 829px) {
+  .header__picture {
+    position: unset;
+    bottom: unset;
+  }
   .header__large-heading {
     display: block;
   }
