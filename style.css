@@ -196,7 +196,7 @@ a {
 .large-heading {
   font-size: 72px;
   line-height: 98px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .hero__heading {
   margin: 16px 0;
@@ -260,7 +260,7 @@ a {
 }
 .section__content {
   padding-top: 110px;
-  width: 648px;
+  width: 651px;
 }
 /* ********************* */
 .divider-width2 {
@@ -299,21 +299,21 @@ a {
 .divider-width3 {
   width: 19%;
 }
-.card2__section {
+.curved-card__section {
   font-size: var(--fs-0);
 }
-.card2__holder {
+.curved-card__holder {
   width: calc(950px / 3);
   font-size: var(--fs-20);
 }
-.card2 {
+.curved-card {
   width: 280px;
   height: 400px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
   position: relative;
 }
-.card2__holder-row {
+.curved-card__holder-row {
   margin-top: 40px;
 }
 .card__pink {
@@ -326,17 +326,17 @@ a {
   background-color: var(--light-blue);
 }
 
-.card2__picture {
+.curved-card__picture {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.card2__picture--first {
+.curved-card__picture--first {
   position: absolute;
   top: 50%;
   left: 44%;
 }
-.card2__text {
+.curved-card__text {
   font-weight: 800;
   font-size: var(--fs-24);
   line-height: 33px;
@@ -345,7 +345,7 @@ a {
   top: 24px;
   left: 16px;
 }
-.card2__btn {
+.curved-card__btn {
   padding: 8px 18px 9px 19px;
   border: 1px solid var(--text-primary-color);
   border-radius: 4px;
@@ -356,13 +356,16 @@ a {
   right: 16px;
 }
 .card__pink:hover {
-  box-shadow: 0 0 0 6px var(--pink-color);
+  box-shadow: 0 0 0 8px var(--pink-color);
+  transition-duration: 0.3s;
 }
 .card__gold:hover {
-  box-shadow: 0 0 0 6px var(--light-gold);
+  box-shadow: 0 0 0 8px var(--light-gold);
+  transition-duration: 0.3s;
 }
 .card__blue:hover {
-  box-shadow: 0 0 0 6px var(--light-blue);
+  box-shadow: 0 0 0 8px var(--light-blue);
+  transition-duration: 0.3s;
 }
 /* ******************* */
 .divider-width4 {
@@ -589,10 +592,10 @@ a {
     margin: 14px auto 64px auto;
   }
 
-  .card2__holder-row {
+  .curved-card__holder-row {
     margin: unset;
   }
-  .card2 {
+  .curved-card {
     margin: 20px auto;
   }
   .divider-width4 {
@@ -645,11 +648,13 @@ a {
     background-color: transparent;
     font-size: var(--fs-20);
     margin-top: 8px;
+    cursor: pointer;
   }
   .hidden {
     display: none;
   }
   .block-element {
+    text-align: center;
     display: block;
   }
   .navbar__item-holder {
@@ -735,7 +740,7 @@ a {
   }
 }
 @media screen and (max-width: 450px) {
-  .card2__holder {
+  .curved-card__holder {
     width: unset;
   }
 }
